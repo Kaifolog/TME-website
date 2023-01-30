@@ -56,14 +56,14 @@
                 <div class="flex flex-row justify-center mt-24 p-5">
                         <div class="flex flex-col align-items-center">
                                 <button id="download-btn"
-                                        class="px-16 py-5 bg-[#5c73f2] hover:bg-[#687df3] text-white rounded-lg ">
-                                        <div class="text-3xl font-bold">Download</div>
-                                        <div class="text-xs">for Windows</div>
+                                        class="px-16 py-8 bg-[#5c73f2] hover:bg-[#687df3] text-white rounded-lg ">
+                                        <div id="dowload-lbl" class="text-2xl font-bold">Download for</div>
+                                        <div id="version-lbl" class="text-xs"> version</div>
                                 </button>
                                 <div class="flex flex-row justify-center pt-2 text-white text-xs">
                                         <div>
-                                                also for <a class="text-[#a8b3f0]"> Linux </a>, <a
-                                                        class="text-[#a8b3f0]"> MacOS </a>.
+                                                also for <button id="os-2" class="text-[#a8b3f0]"> </button>,
+                                                <button id="os-3" class="text-[#a8b3f0]"> </button>.
                                         </div>
                                 </div>
                         </div>
@@ -208,6 +208,7 @@
                         </div>
                 </div>
         </div>
+        <script src="./os.js"></script>
         <script src="./script.js"></script>
 </body>
 
