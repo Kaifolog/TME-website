@@ -1,0 +1,217 @@
+<!doctype html>
+<html>
+
+<head>
+        <meta charset="UTF-8">
+        <meta name="TME" content="width=device-width, initial-scale=1.0">
+        <link href="style.css" rel="stylesheet">
+
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Anonymous+Pro&display=swap" rel="stylesheet">
+
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@700&display=swap" rel="stylesheet">
+</head>
+<!-- 5c73f2 687df3 333333 161616 202020  a8b3f0 -->
+
+<body class="bg-[#161616] ">
+        <!-- header -->
+        <div
+                class="fixed top-0 left-0 right-0 grid grid-cols-4 bg-[#5c73f2] text-white shadow-2xl py-5 lg:py-1 border-[#333333] border-b text-3xl lg:text-base z-10">
+                <div class="flex justify-center font-bold text-5xl lg:text-3xl font-mono">
+                        <button>
+                                TME
+                        </button>
+                </div>
+                <div class="col-span-3 flex flex-row justify-end content-end py-5 md:py-1 ">
+                        <div class="py-5 lg:py-1 px-4 mx-2 mr-[-110px] lg:mr-[0px]">
+                                <button id="" class="text-black font-bold">
+                                        укр
+                                </button>
+                                |
+                                <button id="eng-btn" class="font-bold">
+                                        англ
+                                </button>
+                        </div>
+                        <button id="manual-btn" class="py-5 lg:py-1 px-4 mx-2 invisible lg:visible"
+                                onclick="autoScrollTo('manual');">
+                                Інструкція
+                        </button>
+                        <button id="github-btn" class="py-5 lg:py-1 px-4 mx-2 bg-[#333] hover:bg-[#4078c0] rounded-lg">
+                                Github</button>
+                        <button id="contacts-btn" class=" py-5 lg:py-1 px-4 mx-2 bg-sky-500 hover:bg-sky-700 rounded-lg"
+                                onclick="autoScrollTo('contacts');">
+                                Напиши мені
+                        </button>
+                </div>
+        </div>
+        <!-- main -->
+        <div class="flex flex-col flex-nowrap pt-64 pb-36 justify-items-center">
+                <div class="flex justify-center text-6xl text-white">Твоя сучасна та зручна</div>
+                <div class="flex justify-center text-7xl text-[#5c73f2] py-5" style=" font-family: 'Caveat', cursive;">
+                        машина Тюрінга</div>
+                <div class="flex flex-row justify-center mt-24 p-5">
+                        <div class="flex flex-col align-items-center">
+                                <button id="download-btn"
+                                        class="px-16 py-8 bg-[#5c73f2] hover:bg-[#687df3] text-white rounded-lg ">
+                                        <div id="dowload-lbl" class="text-2xl font-bold">Завантажити для</div>
+                                        <div id="version-lbl" class="text-xs"> версія</div>
+                                </button>
+                                <div class="flex flex-row justify-center pt-2 text-white text-xs">
+                                        <div>
+                                                також для <button id="os-2" class="text-[#a8b3f0]"> </button>,
+                                                <button id="os-3" class="text-[#a8b3f0]"> </button>.
+                                        </div>
+                                </div>
+                        </div>
+                </div>
+                <div id="manual" class="invisible">Manual anchor</div>
+        </div>
+        <!-- demo -->
+        <div class=" flex flex-col lg:flex-row justify-center mb-72">
+                <div class="flex flex-row justify-center">
+                        <img src="assets/demo.png" alt="Demo"
+                                class="max-w-4xl shadow-[0px_0px_40px_-5px_rgba(0,0,0,0.7)] rounded-3xl">
+                </div>
+                <div class="flex flex-col justify-center text-3xl text-white lg:pl-16 mt-16 lg:mt-1">
+                        <div class="flex flex-col row-span-5 justify-center = mb-16 lg:mb-44">
+                                <div class="flex flex-row justify-center">
+                                        Але... Що це за незнайома мова?
+                                </div>
+                                <div class="flex flex-row justify-center pt-4">
+                                        <button id="download-manual-btn"
+                                                class="px-14 py-4 bg-white hover:bg-[#687df3] text-black hover:text-white rounded-lg font-bold"
+                                                style="font-family: 'Anonymous Pro', monospace;">
+                                                <div class="text-3xl py-1">Завантажити інструкцію</div>
+                                        </button>
+                                </div>
+                        </div>
+                        <div class="flex flex-row justify-center">
+                                Як почати безболісно?
+                        </div>
+                        <img src="assets/arrow.svg" alt="Arrow" class="h-[400px] mb-[-320px] lg:mb-[-400px] mt-[-80px]">
+
+                </div>
+
+        </div>
+        <!-- To start with comfort  -->
+        <div class="flex flex-col justify-center">
+                <div class="flex flex-row justify-center bg-[#5c73f2] mt-[-70px] py-[50px] ">
+                        <div class="flex flex-col justify-center  text-white w-[60%] h-[5%]  pt-5 max-w-[1000px]">
+                                <div
+                                        class="flex flex-row justify-center text-3xl font-bold mb-5 px-[50px] invisible lg:visible">
+                                        Твій шлях, твоє світло:
+                                </div>
+                                <div
+                                        class="flex flex-row justify-center text-3xl font-bold mb-5 px-[50px] visible mt-[-90px] lg:invisible">
+                                        Твій шлях,
+                                </div>
+                                <div
+                                        class="flex flex-row justify-center text-3xl font-bold mb-5 px-[50px] visible lg:invisible ">
+                                        твоє світло:
+                                </div>
+                                <div class="flex flex-row justify-center pl-[50px] text-xl lg:">
+                                        Скачай все → Прочитай інструкцію → Напиши свою першу програму → Отримуй
+                                        задоволення
+                                        <img src="assets/sheesh.png" alt="Sheesh"
+                                                class="h-[50px] relative invisible lg:visible lg:bottom-[10px]">
+                                </div>
+                        </div>
+                </div>
+        </div>
+        <!-- Exclusive features -->
+        <div class="flex flex-col justify-center mb-24">
+                <div class="flex flex-row justify-center text-3xl text-white mt-20 pb-10 font-bold">
+                        Чому цей емулятор особливий?
+                </div>
+                <div class="flex flex-row justify-center content-between text-white">
+                        <div
+                                class="grid grid-rows-5 bg-[#202020] shadow-[0px_0px_40px_-5px_rgba(0,0,0,0.7)] w-[400px] h-[200px] rounded-3xl border-2 border-[#687df3]">
+                                <div class="row-span-2 flex flex-col justify-end">
+                                        <div class="flex flex-row justify-center text-xl font-bold">
+                                                Темна тема
+                                        </div>
+                                </div>
+                                <div class="flex flex-row justify-center pt-5 px-10">
+                                        Ніколи не покидай світ хороших інтерфейсів.
+                                </div>
+                        </div>
+                        <div
+                                class="grid grid-rows-5 bg-[#202020] shadow-[0px_0px_40px_-5px_rgba(0,0,0,0.7)] w-[400px] h-[200px] rounded-3xl ml-20 border-2 border-[#687df3]">
+                                <div class="row-span-2 flex flex-col justify-end">
+                                        <div class="flex flex-row justify-center text-xl font-bold">
+                                                Коментарі
+                                        </div>
+                                </div>
+                                <div class="flex flex-row justify-center pt-5 px-10">
+                                        Не хочеш заблукати темним лісом своєї програми? Залишай хлібні крихти!
+                                </div>
+                        </div>
+                </div>
+                <div class="flex flex-row justify-center content-between text-white pt-20">
+                        <div
+                                class="grid grid-rows-5 bg-[#202020] shadow-[0px_0px_40px_-5px_rgba(0,0,0,0.7)] w-[400px] h-[200px] rounded-3xl border-2 border-[#687df3]">
+                                <div class="row-span-2 flex flex-col justify-end">
+                                        <div class="flex flex-row justify-center text-xl font-bold">
+                                                Макроси
+                                        </div>
+                                </div>
+                                <div class="row-span-3 flex flex-row justify-center pt-5 px-10">
+                                        Почувай себе як вдома, розстав на свій розсуд конструкції, меблі, оператори.
+                                </div>
+                        </div>
+                        <div
+                                class="grid grid-rows-5 bg-[#202020] shadow-[0px_0px_40px_-5px_rgba(0,0,0,0.7)] w-[400px] h-[200px] rounded-3xl ml-20 border-2 border-[#687df3]">
+                                <div class="row-span-2 flex flex-col justify-end">
+                                        <div class="flex flex-row justify-center text-xl font-bold">
+                                                Точки зупину
+                                        </div>
+                                </div>
+                                <div class="flex flex-row justify-center pt-5 px-10">
+                                        Досліджуй та відлагоджуй свою програму по-сучасному.
+                                </div>
+                        </div>
+                </div>
+        </div>
+        <div class="w-[100%] h-[0px] border-b-2 border-[#687df3] border-dashed"></div>
+        <!-- contacts -->
+        <div id="contacts" class="flex flex-row justify-center mb-24 mt-24">
+                <div
+                        class="flex flex-col justify-items-center grid-flow-dense bg-[#202020] border-8 border-[#687df3] shadow-[0px_0px_40px_-5px_rgba(0,0,0,0.7)] shadow-[#687df3] w-[60%] max-w-[1000px] h-[600px] rounded-3xl text-white">
+
+                        <div class="w-[100%] pl-20 py-10 font-bold text-3xl">
+                                Мої контакти:
+                        </div>
+                        <div class="w-[100%] pl-20 text-2xl pb-1">
+                                Хочеш подякувати? Постав зірочку на мій репозиторій (треба мати github акаунт):
+                        </div>
+                        <div class="w-[100%] pl-24 text-2xl">
+                                → <a href="https://github.com/Kaifolog/TME"
+                                        class="text-[#5c73f2] hover:text-[#a8b3f0]">https://github.com/Kaifolog/TME</a>
+                        </div>
+                        <div class="w-[100%] pl-20 text-2xl">
+                                Не соромся контрібьютити у репозиторій, створювати issue.
+                        </div>
+                        <div class="w-[100%] pl-20 text-2xl pt-10">
+                                Пошта для питань, відгуків, подяк та ділових пропозицій:
+                        </div>
+                        <div class="w-[100%] pl-24 text-2xl">
+                                → <a href="mailto:a.kaifolog@gmail.com"
+                                        class="text-[#5c73f2] hover:text-[#a8b3f0]">a.kaifolog@gmail.com</a>
+                        </div>
+
+                        <div class="flex flex-row justify-center w-[100%] text-2xl pt-16">
+                                Бажаю вдачі!
+                        </div>
+                        <div class="flex flex-row justify-center w-[100%] text-2xl pt-3 lg:pt-10">
+                                <img src="assets/kitty.png" alt="Kitty" class="w-[80px]">
+                        </div>
+                </div>
+        </div>
+        <script src="scripts/os.js"></script>
+        <script src="scripts/script.js"></script>
+</body>
+
+</html>
