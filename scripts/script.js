@@ -1,10 +1,10 @@
 
 
 // variables
-version = "1.2.1"
-winrelease = "https://github.com/Kaifolog/TME/releases/download/1.2.1_win64/TME.zip"
-macrelease = "https://github.com/Kaifolog/TME/releases/download/1.2.1_mac64-arm/TME.zip"
-linrelease = "https://github.com/Kaifolog/TME/releases/download/1.2.1_linux64/TME.zip"
+version = "2.0.0b (beta)"
+winrelease = "https://github.com/Kaifolog/TME/releases/download/v2.0.0b/TME.exe"
+macrelease = ""
+linrelease = ""
 //
 
 function autoScrollTo(el) {
@@ -40,13 +40,15 @@ switch (Detect.OS) {
                 document.getElementById("os-3").innerHTML = document.getElementById("os-3").innerHTML + " " + "Linux"
 
                 document.getElementById("download-btn").onclick = function a() {
-                        location.href = macrelease;
+                        alert("Sorry. Mac OS version is currently unavaliable. You can try windows version.");
+                        // location.href = macrelease;
                 };
                 document.getElementById("os-2").onclick = function a() {
                         location.href = winrelease;
                 };
                 document.getElementById("os-3").onclick = function a() {
-                        location.href = linrelease;
+                        alert("Sorry. Linux version is currently unavaliable. You can try windows version.");
+                        // location.href = linrelease;
                 };
                 break;
         case "Linux":
@@ -56,13 +58,15 @@ switch (Detect.OS) {
                 document.getElementById("os-3").innerHTML = document.getElementById("os-3").innerHTML + " " + "MacOS"
 
                 document.getElementById("download-btn").onclick = function a() {
-                        location.href = linrelease;
+                        alert("Sorry. Linux version is currently unavaliable. You can try windows version.");
+                        // location.href = linrelease;
                 };
                 document.getElementById("os-2").onclick = function a() {
                         location.href = winrelease;
                 };
                 document.getElementById("os-3").onclick = function a() {
-                        location.href = macrelease;
+                        alert("Sorry. Mac OS version is currently unavaliable. You can try windows version.");
+                        // location.href = macrelease;
                 };
                 break;
         default:
@@ -76,10 +80,12 @@ switch (Detect.OS) {
                         location.href = winrelease;
                 };
                 document.getElementById("os-2").onclick = function a() {
-                        location.href = linrelease;
+                        alert("Sorry. Linux version is currently unavaliable. You can try windows version.");
+                        // location.href = linrelease;
                 };
                 document.getElementById("os-3").onclick = function a() {
-                        location.href = macrelease;
+                        alert("Sorry. Mac OS version is currently unavaliable. You can try windows version.");
+                        // location.href = macrelease;
                 };
 }
 
